@@ -1,0 +1,45 @@
+{
+	"items": [
+		{
+			"name": "ВКонтакте",
+			"description": "Самая популярная соцсеть и первое суперприложение в Роcсии",
+			"icon_url": "https://mobile-olympiad-trajectory.hb.bizmrg.com/logo-vk.png",
+			"service_url": "https://vk.com/"
+		},{
+			"name": "Одноклассники",
+			"description": "Первая соцсеть в России, развлекательная платформа с играми, видео и музыкой",
+			"icon_url": "https://mobile-olympiad-trajectory.hb.bizmrg.com/logo-ok.png",
+			"service_url": "https://ok.ru/"
+		},{
+			"name": "Сферум",
+			"description": "Онлайн-платформа для обучения и образовательных коммуникаций",
+			"icon_url": "https://mobile-olympiad-trajectory.hb.bizmrg.com/logo-spherum.png",
+			"service_url": "https://sferum.ru/"
+		},{
+			"name": "GeekBrains",
+			"description": "Портал для обучения программированию, маркетингу, дизайну и управлению с нуля",
+			"icon_url": "https://mobile-olympiad-trajectory.hb.bizmrg.com/logo-geekbrains.png",
+			"service_url": "https://gb.ru/"
+		},{
+			"name": "SkillFactory",
+			"description": "Обучение цифровым профессиям: работа с данными, машинное обучение",
+			"icon_url": "https://mobile-olympiad-trajectory.hb.bizmrg.com/logo-skillfactory.png",
+			"service_url": "https://skillfactory.ru/"
+		},{
+			"name": "Почта",
+			"description": "Центр управления делами: Облако, Календарь, Задачи, Звонки и Новости",
+			"icon_url": "https://mobile-olympiad-trajectory.hb.bizmrg.com/logo-mail.png",
+			"service_url": "https://e.mail.ru/inbox/"
+		},{
+			"name": "Облако",
+			"description": "Сервис для хранения файлов и совместной работы с ними",
+			"icon_url": "https://mobile-olympiad-trajectory.hb.bizmrg.com/logo-cloud.png",
+			"service_url": "https://cloud.mail.ru/"
+		},{
+			"name": "Календарь",
+			"description": "Планирование дня и эффективное управление временем",
+			"icon_url": "https://mobile-olympiad-trajectory.hb.bizmrg.com/logo-calendar.png",
+			"service_url": "https://calendar.mail.ru/"
+		}
+	]
+}

@@ -1,0 +1,791 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE646D6B29A1D450009CE744 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE646D6A29A1D450009CE744 /* AppDelegate.swift */; };
+		CE646D6D29A1D450009CE744 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE646D6C29A1D450009CE744 /* SceneDelegate.swift */; };
+		CE646D7729A1D453009CE744 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE646D7629A1D453009CE744 /* Assets.xcassets */; };
+		CE646D7A29A1D453009CE744 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE646D7829A1D453009CE744 /* LaunchScreen.storyboard */; };
+		CE646D8529A1D453009CE744 /* VK_ServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE646D8429A1D453009CE744 /* VK_ServicesTests.swift */; };
+		CE646D8F29A1D453009CE744 /* VK_ServicesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE646D8E29A1D453009CE744 /* VK_ServicesUITests.swift */; };
+		CE646D9129A1D453009CE744 /* VK_ServicesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE646D9029A1D453009CE744 /* VK_ServicesUITestsLaunchTests.swift */; };
+		CE646DA129A1D561009CE744 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE646DA029A1D561009CE744 /* Coordinator.swift */; };
+		CE646DA429A1D585009CE744 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE646DA329A1D585009CE744 /* AppCoordinator.swift */; };
+		CE646DAC29A1D68C009CE744 /* ServicesListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE646DAB29A1D68C009CE744 /* ServicesListCoordinator.swift */; };
+		CE646DAE29A1D756009CE744 /* ServicesListVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE646DAD29A1D756009CE744 /* ServicesListVIewModel.swift */; };
+		CE646DB129A1D7C7009CE744 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE646DB029A1D7C7009CE744 /* Service.swift */; };
+		CE646DB329A1D941009CE744 /* ServicesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE646DB229A1D941009CE744 /* ServicesListViewController.swift */; };
+		CE646DB729A1D9A7009CE744 /* ServiceCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE646DB629A1D9A7009CE744 /* ServiceCellViewModel.swift */; };
+		CE646DB929A1D9C0009CE744 /* ServiceCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE646DB829A1D9C0009CE744 /* ServiceCellView.swift */; };
+		CE646DBB29A1D9FB009CE744 /* UIViewController+ShowAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE646DBA29A1D9FB009CE744 /* UIViewController+ShowAlert.swift */; };
+		CE646DBD29A1DAE9009CE744 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE646DBC29A1DAE9009CE744 /* NetworkManager.swift */; };
+		CE646DBF29A1DF4F009CE744 /* Result.json in Resources */ = {isa = PBXBuildFile; fileRef = CE646DBE29A1DF4F009CE744 /* Result.json */; };
+		CE646DC829A25147009CE744 /* ServiceDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE646DC729A25147009CE744 /* ServiceDetailsCoordinator.swift */; };
+		CE646DCC29A2527A009CE744 /* ServiceDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE646DCB29A2527A009CE744 /* ServiceDetailsViewModel.swift */; };
+		CE646DCE29A2535F009CE744 /* ServiceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE646DCD29A2535F009CE744 /* ServiceDetailsViewController.swift */; };
+		CE646DD029A27FB9009CE744 /* AppDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE646DCF29A27FB9009CE744 /* AppDependency.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE646D8129A1D453009CE744 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE646D5F29A1D450009CE744 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE646D6629A1D450009CE744;
+			remoteInfo = "VK Services";
+		};
+		CE646D8B29A1D453009CE744 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE646D5F29A1D450009CE744 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE646D6629A1D450009CE744;
+			remoteInfo = "VK Services";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE646D6729A1D450009CE744 /* VK Services.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VK Services.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE646D6A29A1D450009CE744 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE646D6C29A1D450009CE744 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CE646D7629A1D453009CE744 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE646D7929A1D453009CE744 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE646D7B29A1D453009CE744 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE646D8029A1D453009CE744 /* VK ServicesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VK ServicesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE646D8429A1D453009CE744 /* VK_ServicesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VK_ServicesTests.swift; sourceTree = "<group>"; };
+		CE646D8A29A1D453009CE744 /* VK ServicesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VK ServicesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE646D8E29A1D453009CE744 /* VK_ServicesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VK_ServicesUITests.swift; sourceTree = "<group>"; };
+		CE646D9029A1D453009CE744 /* VK_ServicesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VK_ServicesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CE646DA029A1D561009CE744 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		CE646DA329A1D585009CE744 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		CE646DAB29A1D68C009CE744 /* ServicesListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesListCoordinator.swift; sourceTree = "<group>"; };
+		CE646DAD29A1D756009CE744 /* ServicesListVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesListVIewModel.swift; sourceTree = "<group>"; };
+		CE646DB029A1D7C7009CE744 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		CE646DB229A1D941009CE744 /* ServicesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesListViewController.swift; sourceTree = "<group>"; };
+		CE646DB629A1D9A7009CE744 /* ServiceCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCellViewModel.swift; sourceTree = "<group>"; };
+		CE646DB829A1D9C0009CE744 /* ServiceCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCellView.swift; sourceTree = "<group>"; };
+		CE646DBA29A1D9FB009CE744 /* UIViewController+ShowAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ShowAlert.swift"; sourceTree = "<group>"; };
+		CE646DBC29A1DAE9009CE744 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CE646DBE29A1DF4F009CE744 /* Result.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Result.json; sourceTree = "<group>"; };
+		CE646DC729A25147009CE744 /* ServiceDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetailsCoordinator.swift; sourceTree = "<group>"; };
+		CE646DCB29A2527A009CE744 /* ServiceDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetailsViewModel.swift; sourceTree = "<group>"; };
+		CE646DCD29A2535F009CE744 /* ServiceDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetailsViewController.swift; sourceTree = "<group>"; };
+		CE646DCF29A27FB9009CE744 /* AppDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependency.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE646D6429A1D450009CE744 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE646D7D29A1D453009CE744 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE646D8729A1D453009CE744 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE646D5E29A1D450009CE744 = {
+			isa = PBXGroup;
+			children = (
+				CE646D6929A1D450009CE744 /* VK Services */,
+				CE646D8329A1D453009CE744 /* VK ServicesTests */,
+				CE646D8D29A1D453009CE744 /* VK ServicesUITests */,
+				CE646D6829A1D450009CE744 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE646D6829A1D450009CE744 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE646D6729A1D450009CE744 /* VK Services.app */,
+				CE646D8029A1D453009CE744 /* VK ServicesTests.xctest */,
+				CE646D8A29A1D453009CE744 /* VK ServicesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE646D6929A1D450009CE744 /* VK Services */ = {
+			isa = PBXGroup;
+			children = (
+				CE646DD329A28359009CE744 /* Resources */,
+				CE646DD229A2833C009CE744 /* Source */,
+				CE646D7B29A1D453009CE744 /* Info.plist */,
+			);
+			path = "VK Services";
+			sourceTree = "<group>";
+		};
+		CE646D8329A1D453009CE744 /* VK ServicesTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE646D8429A1D453009CE744 /* VK_ServicesTests.swift */,
+			);
+			path = "VK ServicesTests";
+			sourceTree = "<group>";
+		};
+		CE646D8D29A1D453009CE744 /* VK ServicesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE646D8E29A1D453009CE744 /* VK_ServicesUITests.swift */,
+				CE646D9029A1D453009CE744 /* VK_ServicesUITestsLaunchTests.swift */,
+			);
+			path = "VK ServicesUITests";
+			sourceTree = "<group>";
+		};
+		CE646D9D29A1D4C8009CE744 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				CE646D7829A1D453009CE744 /* LaunchScreen.storyboard */,
+				CE646D6C29A1D450009CE744 /* SceneDelegate.swift */,
+				CE646D6A29A1D450009CE744 /* AppDelegate.swift */,
+				CE646DCF29A27FB9009CE744 /* AppDependency.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		CE646D9E29A1D4E7009CE744 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				CE646DA029A1D561009CE744 /* Coordinator.swift */,
+				CE646DA329A1D585009CE744 /* AppCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		CE646D9F29A1D501009CE744 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				CE646DA729A1D636009CE744 /* Service */,
+				CE646DC629A25114009CE744 /* Service Details */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		CE646DA729A1D636009CE744 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CE646DAA29A1D64E009CE744 /* View */,
+				CE646DA929A1D646009CE744 /* ViewModel */,
+				CE646DAB29A1D68C009CE744 /* ServicesListCoordinator.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CE646DA829A1D63E009CE744 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CE646DB529A1D980009CE744 /* View */,
+				CE646DB429A1D978009CE744 /* ViewModel */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		CE646DA929A1D646009CE744 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE646DAD29A1D756009CE744 /* ServicesListVIewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE646DAA29A1D64E009CE744 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE646DA829A1D63E009CE744 /* Cell */,
+				CE646DB229A1D941009CE744 /* ServicesListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE646DAF29A1D787009CE744 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE646DB029A1D7C7009CE744 /* Service.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE646DB429A1D978009CE744 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE646DB629A1D9A7009CE744 /* ServiceCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE646DB529A1D980009CE744 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE646DB829A1D9C0009CE744 /* ServiceCellView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE646DC629A25114009CE744 /* Service Details */ = {
+			isa = PBXGroup;
+			children = (
+				CE646DCA29A25253009CE744 /* View */,
+				CE646DC929A25247009CE744 /* ViewModel */,
+				CE646DC729A25147009CE744 /* ServiceDetailsCoordinator.swift */,
+			);
+			path = "Service Details";
+			sourceTree = "<group>";
+		};
+		CE646DC929A25247009CE744 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE646DCB29A2527A009CE744 /* ServiceDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE646DCA29A25253009CE744 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE646DCD29A2535F009CE744 /* ServiceDetailsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE646DD129A28327009CE744 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CE646DBC29A1DAE9009CE744 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		CE646DD229A2833C009CE744 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				CE646DD429A2836F009CE744 /* Custom */,
+				CE646D9D29A1D4C8009CE744 /* Application */,
+				CE646D9E29A1D4E7009CE744 /* Coordinators */,
+				CE646D9F29A1D501009CE744 /* Scenes */,
+				CE646DAF29A1D787009CE744 /* Models */,
+				CE646DD129A28327009CE744 /* Network */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		CE646DD329A28359009CE744 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CE646D7629A1D453009CE744 /* Assets.xcassets */,
+				CE646DBE29A1DF4F009CE744 /* Result.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CE646DD429A2836F009CE744 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				CE646DBA29A1D9FB009CE744 /* UIViewController+ShowAlert.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE646D6629A1D450009CE744 /* VK Services */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE646D9429A1D453009CE744 /* Build configuration list for PBXNativeTarget "VK Services" */;
+			buildPhases = (
+				CE646D6329A1D450009CE744 /* Sources */,
+				CE646D6429A1D450009CE744 /* Frameworks */,
+				CE646D6529A1D450009CE744 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VK Services";
+			packageProductDependencies = (
+			);
+			productName = "VK Services";
+			productReference = CE646D6729A1D450009CE744 /* VK Services.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE646D7F29A1D453009CE744 /* VK ServicesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE646D9729A1D453009CE744 /* Build configuration list for PBXNativeTarget "VK ServicesTests" */;
+			buildPhases = (
+				CE646D7C29A1D453009CE744 /* Sources */,
+				CE646D7D29A1D453009CE744 /* Frameworks */,
+				CE646D7E29A1D453009CE744 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE646D8229A1D453009CE744 /* PBXTargetDependency */,
+			);
+			name = "VK ServicesTests";
+			productName = "VK ServicesTests";
+			productReference = CE646D8029A1D453009CE744 /* VK ServicesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE646D8929A1D453009CE744 /* VK ServicesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE646D9A29A1D453009CE744 /* Build configuration list for PBXNativeTarget "VK ServicesUITests" */;
+			buildPhases = (
+				CE646D8629A1D453009CE744 /* Sources */,
+				CE646D8729A1D453009CE744 /* Frameworks */,
+				CE646D8829A1D453009CE744 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE646D8C29A1D453009CE744 /* PBXTargetDependency */,
+			);
+			name = "VK ServicesUITests";
+			productName = "VK ServicesUITests";
+			productReference = CE646D8A29A1D453009CE744 /* VK ServicesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE646D5F29A1D450009CE744 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					CE646D6629A1D450009CE744 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					CE646D7F29A1D453009CE744 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = CE646D6629A1D450009CE744;
+					};
+					CE646D8929A1D453009CE744 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = CE646D6629A1D450009CE744;
+					};
+				};
+			};
+			buildConfigurationList = CE646D6229A1D450009CE744 /* Build configuration list for PBXProject "VK Services" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE646D5E29A1D450009CE744;
+			packageReferences = (
+			);
+			productRefGroup = CE646D6829A1D450009CE744 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE646D6629A1D450009CE744 /* VK Services */,
+				CE646D7F29A1D453009CE744 /* VK ServicesTests */,
+				CE646D8929A1D453009CE744 /* VK ServicesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE646D6529A1D450009CE744 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE646DBF29A1DF4F009CE744 /* Result.json in Resources */,
+				CE646D7A29A1D453009CE744 /* LaunchScreen.storyboard in Resources */,
+				CE646D7729A1D453009CE744 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE646D7E29A1D453009CE744 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE646D8829A1D453009CE744 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE646D6329A1D450009CE744 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE646DB729A1D9A7009CE744 /* ServiceCellViewModel.swift in Sources */,
+				CE646DA129A1D561009CE744 /* Coordinator.swift in Sources */,
+				CE646DCC29A2527A009CE744 /* ServiceDetailsViewModel.swift in Sources */,
+				CE646DB929A1D9C0009CE744 /* ServiceCellView.swift in Sources */,
+				CE646DBD29A1DAE9009CE744 /* NetworkManager.swift in Sources */,
+				CE646DB129A1D7C7009CE744 /* Service.swift in Sources */,
+				CE646DAE29A1D756009CE744 /* ServicesListVIewModel.swift in Sources */,
+				CE646DB329A1D941009CE744 /* ServicesListViewController.swift in Sources */,
+				CE646DAC29A1D68C009CE744 /* ServicesListCoordinator.swift in Sources */,
+				CE646DBB29A1D9FB009CE744 /* UIViewController+ShowAlert.swift in Sources */,
+				CE646DA429A1D585009CE744 /* AppCoordinator.swift in Sources */,
+				CE646DC829A25147009CE744 /* ServiceDetailsCoordinator.swift in Sources */,
+				CE646DD029A27FB9009CE744 /* AppDependency.swift in Sources */,
+				CE646D6B29A1D450009CE744 /* AppDelegate.swift in Sources */,
+				CE646D6D29A1D450009CE744 /* SceneDelegate.swift in Sources */,
+				CE646DCE29A2535F009CE744 /* ServiceDetailsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE646D7C29A1D453009CE744 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE646D8529A1D453009CE744 /* VK_ServicesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE646D8629A1D453009CE744 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE646D8F29A1D453009CE744 /* VK_ServicesUITests.swift in Sources */,
+				CE646D9129A1D453009CE744 /* VK_ServicesUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE646D8229A1D453009CE744 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE646D6629A1D450009CE744 /* VK Services */;
+			targetProxy = CE646D8129A1D453009CE744 /* PBXContainerItemProxy */;
+		};
+		CE646D8C29A1D453009CE744 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE646D6629A1D450009CE744 /* VK Services */;
+			targetProxy = CE646D8B29A1D453009CE744 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE646D7829A1D453009CE744 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE646D7929A1D453009CE744 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE646D9229A1D453009CE744 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE646D9329A1D453009CE744 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE646D9529A1D453009CE744 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R5CRVUNLL9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "VK Services/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "neverovskij.VK-Services";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE646D9629A1D453009CE744 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R5CRVUNLL9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "VK Services/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "neverovskij.VK-Services";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE646D9829A1D453009CE744 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R5CRVUNLL9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "neverovskij.VK-ServicesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VK Services.app/VK Services";
+			};
+			name = Debug;
+		};
+		CE646D9929A1D453009CE744 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R5CRVUNLL9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "neverovskij.VK-ServicesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VK Services.app/VK Services";
+			};
+			name = Release;
+		};
+		CE646D9B29A1D453009CE744 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R5CRVUNLL9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "neverovskij.VK-ServicesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "VK Services";
+			};
+			name = Debug;
+		};
+		CE646D9C29A1D453009CE744 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R5CRVUNLL9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "neverovskij.VK-ServicesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "VK Services";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE646D6229A1D450009CE744 /* Build configuration list for PBXProject "VK Services" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE646D9229A1D453009CE744 /* Debug */,
+				CE646D9329A1D453009CE744 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE646D9429A1D453009CE744 /* Build configuration list for PBXNativeTarget "VK Services" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE646D9529A1D453009CE744 /* Debug */,
+				CE646D9629A1D453009CE744 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE646D9729A1D453009CE744 /* Build configuration list for PBXNativeTarget "VK ServicesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE646D9829A1D453009CE744 /* Debug */,
+				CE646D9929A1D453009CE744 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE646D9A29A1D453009CE744 /* Build configuration list for PBXNativeTarget "VK ServicesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE646D9B29A1D453009CE744 /* Debug */,
+				CE646D9C29A1D453009CE744 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE646D5F29A1D450009CE744 /* Project object */;
+}
